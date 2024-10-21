@@ -1,0 +1,9 @@
+{
+  "name": "Reusable CI Workflow",
+  "description": "A reusable CI workflow for building and testing",
+  "iconName": "octicon workflow",
+  "categories": [
+    "Continuous Integration",
+    "Automation"
+  ]
+}
