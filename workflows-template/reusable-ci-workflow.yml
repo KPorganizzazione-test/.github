@@ -1,0 +1,19 @@
+name: Reusable CI Workflow
+
+on:
+  workflow_call:
+    inputs:
+      branch:
+        description: 'Branch name'
+        required: true
+        default: 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo Hello from reusable workflow, running on branch ${{ inputs.branch }}
